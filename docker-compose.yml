@@ -17,7 +17,7 @@ services:
       POSTGRES_DB: postgres
     ports:
       - "5432:5432"
-    restart: no
+    restart: "no"
     volumes:
       - db-data:/var/lib/postgresql/data/
   pgadmin:
@@ -27,7 +27,7 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=test@pgadmin.org
       - PGADMIN_DEFAULT_PASSWORD=password
-    restart: always
+    restart: "no"
     volumes:
       - pgadmin:/root/.pgadmin
 volumes:

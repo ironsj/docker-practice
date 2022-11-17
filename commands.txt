@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=FDBGsS3UVjw
+
+https://www.youtube.com/watch?v=URzZhiZTvgA
+
+docker exec -it 1c4b1ece1cc3 /bin/sh
+psql -U irons-postgres postgres
+
+select * from migrations;
+select * from user_profile;
+insert into user_profile values ('2', 'tom');
